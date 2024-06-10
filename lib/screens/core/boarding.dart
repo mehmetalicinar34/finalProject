@@ -5,7 +5,7 @@ import '../client/login.dart';
 class BoardingScreen extends StatelessWidget {
   final PageController _pageController = PageController(initialPage: 0);
   final List<String> _imageUrls = [
-    
+    "https://img.freepik.com/free-vector/visual-data-concept-illustration_114360-1912.jpg?t=st=1718040094~exp=1718043694~hmac=9346ad111192c9a2bcc7270efb1b59cc838598edb74a700355d151e5d179bdd6&w=740", 
 
     
     
