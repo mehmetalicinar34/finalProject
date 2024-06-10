@@ -1,0 +1,25 @@
+{
+    "home_title": "E-Ticaret Uygulamam",
+    "add_to_basket": "Sepete Ekle",
+    "products": "Ürünler",
+    "favorites": "Favoriler",
+    "cart": "Sepet",
+    "in-stock": "Mevcut",
+    "not-available": "Tükendi",
+    "added-to-cart": "Ürün Sepete Eklendi.",
+    "remove-favorite": "Favoriden Kaldir",
+    "remove-cart": "Sepetten Kaldir",
+    "cart-empty": "Sepetinizde hic urun bulunmamaktadir.",
+    "settings": "Ayarlar",
+    "payment": "Ödeme",
+    "connection-error": "Lutfen Internet Baglantinizi Kontrol Ediniz.",
+    "reload": "Yenile",
+    "select-language": "Lutfen Istediginiz Dili Seciniz:",
+    "brands": "Markalar",
+    "home": "Ana Menü",
+    "about-us": "Hakkımızda",
+    "categories": "Kategoriler",
+    "clear-cart": "Sepeti boşalt",
+    "total-amount": "Toplam Tutar"
+
+}

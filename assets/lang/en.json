@@ -1,0 +1,25 @@
+{
+    "home_title": "E-Commerce",
+    "add_to_basket": "Add to basket",
+    "products": "Products",
+    "favorites": "Favorites",
+    "cart": "Shopping Cart",
+    "in-stock": "In-Stock",
+    "not-available": "Not Available",
+    "added-to-cart": "Product Added to Cart.",
+    "remove-favorite": "Remove from Favorites",
+    "remove-cart": "Remove from cart",
+    "cart-empty": "No products added to cart.",
+    "settings": "Settings",
+    "payment": "Payment",
+    "connection-error": "Please control your internet connection.",
+    "reload": "Reload",
+    "select-language": "Please select language:",
+    "brands": "Brands",
+    "home": "Home",
+    "about-us": "About Us",
+    "categories": "Categories",
+    "clear-cart": "Clear cart",
+    "total-amount": "Total Amount"
+
+}
