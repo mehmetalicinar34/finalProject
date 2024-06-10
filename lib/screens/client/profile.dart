@@ -99,9 +99,6 @@ class _ProfileScreenState extends State<ProfileScreen> {
         return;
       }
 
-      //resize
-      // Read a jpeg image from file.
-      // Resize the image to a 120x? thumbnail (maintaining the aspect ratio).
       img.Image thumbnail;
 
       if (temp.width >= temp.height) {
@@ -109,20 +106,13 @@ class _ProfileScreenState extends State<ProfileScreen> {
       } else {
         thumbnail = img.copyResize(temp, width: 500);
       }
-      //= img.copyResize(temp, width: 500);
-      // Save the thumbnail to a jpeg file.
       final resizedDosyaVerileri = img.encodeJpg(thumbnail, quality: 85);
 
       final Directory tempDir = await getTemporaryDirectory();
       final Directory appSupportDir = await getApplicationSupportDirectory();
       final Directory appCacheDir = await getApplicationCacheDirectory();
 
-      //print(tempDir);
-      //print(appSupportDir);
-      //print(appCacheDir);
-      //return;
 
-      ///File yeniDosya = File(secilenDosya.path);
       File yeniFile = File("${appCacheDir.path}/avatar.jpg");
       yeniFile.writeAsBytesSync(resizedDosyaVerileri);
       setState(() {
