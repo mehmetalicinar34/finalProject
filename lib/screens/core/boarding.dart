@@ -7,7 +7,7 @@ class BoardingScreen extends StatelessWidget {
   final List<String> _imageUrls = [
     "https://img.freepik.com/free-vector/visual-data-concept-illustration_114360-1912.jpg?t=st=1718040094~exp=1718043694~hmac=9346ad111192c9a2bcc7270efb1b59cc838598edb74a700355d151e5d179bdd6&w=740", 
 
-    
+    "https://img.freepik.com/free-vector/sync-concept-illustration_114360-1029.jpg?t=st=1718040095~exp=1718043695~hmac=5d3884470632a0c8127e8c11f141712a57e219bf2d09a2ce1fce532c7e5b7f49&w=740",
     
     
   ];
