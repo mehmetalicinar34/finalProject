@@ -162,18 +162,6 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 child:
                     const Text("Profil fotografini güncellemek için tiklayin."),
               ),
-              const Gap(20),
-              if (dosya != null)
-                Column(
-                  children: [
-                    Text("File Size: ${dosya!.lengthSync() / 1000000} MB"),
-                    Text("Boyutlar: $boyutlar"),
-                    CircleAvatar(
-                      radius: 64,
-                      backgroundImage: FileImage(dosya!),
-                    ),
-                  ],
-                ),
             ],
           ),
         ),
