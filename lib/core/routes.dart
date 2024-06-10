@@ -1,3 +1,4 @@
+import 'package:flutter_advanced_dev/screens/core/splash.dart';
 import 'package:go_router/go_router.dart';
 
 import '../screens/client/register.dart';
@@ -20,7 +21,7 @@ final routes = GoRouter(
   routes: [
     GoRoute(
       path: '/',
-      builder: (context, state) => BoardingScreen(),
+      builder: (context, state) => const SplashScreen(),
     ),
     GoRoute(
       path: '/preview',
@@ -29,6 +30,10 @@ final routes = GoRouter(
     GoRoute(
       path: '/translate',
       builder: (context, state) => const TranslateScreen(),
+    ),
+    GoRoute(
+      path: '/splash',
+      builder: (context, state) => const SplashScreen(),
     ),
     GoRoute(
       path: '/brands',
