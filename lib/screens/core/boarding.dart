@@ -9,7 +9,7 @@ class BoardingScreen extends StatelessWidget {
 
     "https://img.freepik.com/free-vector/sync-concept-illustration_114360-1029.jpg?t=st=1718040095~exp=1718043695~hmac=5d3884470632a0c8127e8c11f141712a57e219bf2d09a2ce1fce532c7e5b7f49&w=740",
     
-    
+    "https://img.freepik.com/free-vector/onboarding-concept-illustration_114360-4120.jpg?t=st=1718040097~exp=1718043697~hmac=155dea0f7c3347887e0ecce81c8125526c91a2dce149b7b018ef3ec5e2670ffa&w=996",
   ];
   final List<String> _descriptions = [
     "MAKE ORDER",
