@@ -3,6 +3,7 @@ import 'package:go_router/go_router.dart';
 import '../screens/client/register.dart';
 import '../screens/client/login.dart';
 import '../screens/client/profile.dart';
+import '../screens/core/boarding.dart';
 import '../screens/core/error.dart';
 import '../screens/core/settings.dart';
 import '../screens/home.dart';
@@ -19,7 +20,7 @@ final routes = GoRouter(
   routes: [
     GoRoute(
       path: '/',
-      builder: (context, state) => const LoginScreen(),
+      builder: (context, state) => BoardingScreen(),
     ),
     GoRoute(
       path: '/preview',
@@ -48,6 +49,10 @@ final routes = GoRouter(
     GoRoute(
       path: '/register',
       builder: (context, state) => const RegisterScreen(),
+    ),
+    GoRoute(
+      path: '/boarding',
+      builder: (context, state) =>  BoardingScreen(),
     ),
     GoRoute(
       path: '/profile',

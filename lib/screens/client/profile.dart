@@ -29,7 +29,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
         cacheFile = f;
       });
     } else {
-      print("dosya bulunmadı");
+      print("dosya bulunmadi");
     }
   }
 
@@ -128,6 +128,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
       setState(() {
         dosya = yeniFile;
         boyutlar = "${temp!.width}x${temp.height}";
+        cacheFile = yeniFile;
       });
     } on Exception catch (e) {
       print("Hata");
@@ -150,7 +151,12 @@ class _ProfileScreenState extends State<ProfileScreen> {
                       "https://upload.wikimedia.org/wikipedia/en/c/c6/NeoTheMatrix.jpg"),
                   maxRadius: 64,
                 ),
-              if (cacheFile != null) const Gap(20),
+              if (cacheFile != null)
+                CircleAvatar(
+                  backgroundImage: FileImage(cacheFile!),
+                  maxRadius: 64,
+                ),
+              const Gap(20),
               OutlinedButton(
                 onPressed: profilePhotoUpdate,
                 child:
@@ -158,20 +164,16 @@ class _ProfileScreenState extends State<ProfileScreen> {
               ),
               const Gap(20),
               if (dosya != null)
-                CircleAvatar(
-                  backgroundImage: FileImage(cacheFile!),
-                  maxRadius: 64,
+                Column(
+                  children: [
+                    Text("File Size: ${dosya!.lengthSync() / 1000000} MB"),
+                    Text("Boyutlar: $boyutlar"),
+                    CircleAvatar(
+                      radius: 64,
+                      backgroundImage: FileImage(dosya!),
+                    ),
+                  ],
                 ),
-              Column(
-                children: [
-                  Text("File Size: ${dosya!.lengthSync() / 1000000} MB"),
-                  Text("Boyutlar: $boyutlar"),
-                  CircleAvatar(
-                    radius: 64,
-                    backgroundImage: FileImage(dosya!),
-                  ),
-                ],
-              ),
             ],
           ),
         ),
